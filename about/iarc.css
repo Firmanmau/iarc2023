@@ -1,0 +1,623 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+body{
+	
+	margin: 0;
+	padding: 0;
+	max-width: 100vw;
+	}
+
+html {
+	max-width: 100%;
+	overflow-x:hidden;
+}
+
+:root {
+	
+	--height-info: 192pt;
+
+	--color-0: #001c2b;
+	--color-1: white;
+}
+
+//Navbar Start
+
+}
+.baris {
+	display: flex;
+	justify-content: space-between;
+	font-family: "QuickSand";
+	
+}
+
+.navbar {
+	box-sizing: border-box;
+	width: 100%;
+	position: absolute;
+	z-index: 20;
+	display: flex;
+	justify-content: space-between;
+	font-family: "QuickSand";
+	background: transparent;
+	padding: 5pt 25pt;
+}
+.navbar-brand img{
+	width: 140px;
+}
+
+.bold {
+	font-weight: bold;
+}
+.ft-xl {
+	font-size: 24pt;
+	font-weight: bold;
+}
+.ft-bg {
+	font-size: 12pt;
+	font-weight: bold;
+}
+.ft-md {
+	font-size: 10pt;
+}
+.ft-sm {
+	font-size: 8pt;
+}
+
+.navbar .logo {
+}
+.navbar .menu {
+	display: none;
+	align-items: center;
+	font-family: "QuickSand";
+}
+.navbar .menu a {
+	padding: 3pt 6pt;
+	color: white;
+	text-decoration: none;
+	transition: color,background-color 0.15s;
+	background-color: transparent;
+	border-radius: 12pt;
+	font-weight: bold;
+}
+.navbar .menu a:hover {
+	color: #001c2b;
+	background-color: white;
+}
+.navbar .menu div {
+	margin: 12pt;
+}
+
+.navbar .merchandise {
+	display: none;
+	align-items: center;
+	font-family: "QuickSand";
+	color: #002d3d;
+}
+/* .merchandise .merchandise-button {
+	border-radius: 12pt;
+	padding: 3pt 6pt;
+	background-color: white;
+} */
+/* .merchandise .merchandise-button:hover{
+	border-radius: 12pt;
+	padding: 3pt 6pt;
+	background-color: #002d3d;
+} */
+.merchandise .merchandise-button a{
+	border-radius: 12pt;
+	padding: 3pt 6pt;
+	background-color: white;
+	text-decoration: none; 
+	font-weight: bold; 
+	color:black ;
+}
+.merchandise .merchandise-button a:hover{
+	transform: scale(1);
+}
+.navbar .hamburger {
+	padding: 4pt;
+	display: block;
+	margin-right: 35px
+}
+
+.navbar .collapsible-bar {
+	width: 100%; height: 0;
+	position: absolute;
+	top: 100%; left: 0;
+	overflow: hidden;
+	transition: height 0.3s;
+	backdrop-filter: blur(7px);
+	z-index: 10;
+}
+.navbar .collapsible-bar.active {
+	height: 108pt;
+}
+.collapsible-bar .items {
+	width: 100%; height: 32pt;
+	margin: 2pt 0;
+	padding: 2pt 0;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+	background-color: transparent;
+	transition: background-color 0.15s;
+	color: white;
+	font-weight: bold;
+}
+.collapsible-bar .items:hover {
+	background-color: rgba(255,255,255,0.2);
+}
+.collapsible-bar .items:active {
+	background-color: rgba(255,255,255,0.2);
+}
+
+
+//Navbar End
+
+h1{
+	font-family: 'Chillax', sans-serif;
+	font-size: 8vw;
+	color: white;
+}
+ p{
+	font-family: 'Quicksand', sans-serif;
+	font-weight: 300;
+	text-align: justify;
+}
+ h2{
+ 	font-family: 'Chillax', sans-serif;
+	font-size: 8vw;
+	color: white;
+}
+header{
+	width: 100%;
+	height: 100vh;
+	background-image: url(gambar/utama.png);
+	background-position: center;
+	background-size: cover;
+	text-align: center;
+	justify-content: center;
+	align-items: center;
+	background-color: #002d3d ;
+}
+.header-content{
+	
+	top: 40%;
+	position: relative;
+	width: 100%;
+	line-height: 140px;
+	/*transform: translateY(50%);*/
+}
+
+.container-2{
+	background-color: #002d3d ;
+	padding: 0px;
+	display: grid;
+	grid-template-columns: 42% auto 42%;
+}
+
+.box-3 .gambar-iarc-2{
+	margin-top: 40px;
+}
+
+
+.box-1 .gambar-iarc-1{
+	margin-top: 29vh;
+	border-radius: 10px;
+}
+
+.section-1{
+	background-color: #002d3d;
+	overflow:hidden;
+}
+.container-4{
+	width: 100%;
+}
+
+.hidden{
+	visibility: hidden;
+}
+
+.goals{
+	margin-top: 210px;
+}
+.goals h1{
+	font-family: 'Chillax', sans-serif;
+	font-size: 6vw;
+	color: white;
+}
+.container-5{
+	position: relative;
+	display: grid;
+	grid-template-columns: 20% auto 20%;
+	margin-top: 25px;
+	padding-bottom: 50px;
+}
+
+ .container-5 .text-goals p{
+      font-family: 'Quicksand', sans-serif;
+      font-weight: 500; color: 
+      white; font-size: 23px; 
+      line-height: 1.2; 
+      text-align: center;"
+    }
+
+.asset-5{
+	width: 20px;
+	margin-top: 25px;
+	margin-left: 50%;
+}
+.asset-5-2{
+	width: 20px;
+	margin-top: 25px;
+	margin-left: 50% ;
+}
+
+.tahun-1 {
+	height: 40vh;
+}
+.tahun-1 h2{
+	line-height: 100%;
+    margin-top: 60px;
+	text-align: center;
+    color: #002d3d ;
+    font-size: 7vw;
+}
+
+.tahun-2 h2{
+	line-height: 100%;
+    margin-top: 70px;
+	text-align: center;
+    color: #002d3d ;
+    font-size: 7vw;
+}
+
+.tahun-1 img{
+	width: 25px;
+    max-height: 19vh;
+    margin-top: 10%;
+    float: right;
+}
+
+.tahun-2{
+	margin-top: 25vh;
+}
+
+.tahun-2 img{
+	width: 25px;
+    max-height: 19vh;
+    margin-top: 70%;
+	float: left;
+}
+
+.gbrgaris22 {
+	height: 150vh;
+    width: 25vw;
+	position: absolute; 
+	max-width: 100vw; 
+	margin: 0 auto auto;
+	left: 0;
+	right: 0;
+}
+.desk-iarc-1 {
+	height: 20vh;
+    max-height: 20vh;
+}
+
+.desk-iarc-2 {
+	margin-top: 7vh;
+}
+
+.box-1 {
+	margin: 0 5% 5%;
+}
+.box-3 {
+	margin: 0 5% 5%;
+}
+
+.iarc-1 {
+	max-width: 100vw;
+	margin-top: 40px;
+}
+.iarc-1 h1{
+	font-family: 'Chillax', sans-serif;
+	font-size: 6vw;
+	color: white;
+}
+.desc-iarc-2 h1{
+	font-family: 'Chillax', sans-serif;
+	font-size: 6vw;
+	color: white;
+}
+.desc-iarc-2 p{
+	style="font-family: 'Quicksand', sans-serif; 
+	font-weight: bold; 
+	color: white; 
+	font-size: 20px; 
+	line-height: 1.5;
+}
+
+.desc-iarc-1 p{
+	style="font-family: 'Quicksand', sans-serif; 
+	font-weight: bold; 
+	color: white; 
+	font-size: 20px; 
+	line-height: 1.5;
+}
+
+.legals .logo img{
+	width: 340px;
+}
+
+.footer {
+	display: flex;
+	flex-direction: column;
+	font-family: "QuickSand";
+	color: #ffffff;
+	background-color: #001c2b;
+	padding-top: 18pt;
+	height: 40vh;
+}
+
+.footer-left {
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+.footer-left .accounts {
+	padding: 16pt;
+}
+.footer-left .accounts div {
+	margin: 4pt 0;
+}
+
+.footer-right {
+	display: flex;
+	width: 50%;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.footer-right .sponsors {
+	padding: 0pt 12pt 0pt 12pt;
+}
+.footer-right .sponsor-logos-container {
+	display: flex;
+	justify-content: flex-start;
+}
+.footer-right .sponsor-logos-container2 {
+	display: flex;
+	justify-content: space-evenly;
+}
+.footer-right .sponsor-logo {
+	width: 64pt; height: 64pt;
+	margin: 4pt;
+	background: transparent;
+	color: var(--color-0);
+}
+.sponsor-logos-container img{
+	position: absolute;
+	margin-top: 1%;
+	border-radius: 4px;
+	width: 200px;
+	position: absolute;
+	}
+.sponsor-logos-container2 img{
+	position: absolute;
+	margin-top: 1%;
+	border-radius: 4px;
+	width: 140px;
+	position: absolute;
+	}
+.footer-right .legals {
+	display: flex;
+	padding: 40pt 12pt 20pt 0pt;
+	padding: 12pt;
+}
+.footer-right .legal-container {
+	width: 256pt; height: 40pt;
+	border-radius: 20pt;
+	background: white;
+}
+.footer-logo img{
+	width: 200px;
+	border-radius: 10px;
+}
+
+.footer-right .legal-container .col{
+	width: 25%;
+}
+
+@media screen and (min-width: 768px){
+	.footer {
+		flex-direction: row;
+	}
+	.footer-left {
+		width: 50%;
+		flex-direction: row;
+	}
+	.footer-right {
+		width: 50%;
+		align-content: center;
+	}
+	:root {
+		--height-nav: 80pt;
+		--height-info: 128pt;
+	}
+
+	.ft-xl {
+		font-size: 60pt;
+	}
+	.ft-bg {
+		font-size: 14pt;
+		font-weight: bold;
+	}
+	.ft-md {
+		font-size: 12pt;
+	}
+	.ft-sm {
+		font-size: 10pt;
+	}
+	.navbar .menu {
+		display: flex;
+	}
+	.navbar .merchandise {
+		display: flex;
+	}
+	.navbar .hamburger {
+		display: none;
+	}
+	.navbar-brand img{
+	width: 140px;
+}
+
+	
+}
+
+@media screen and (max-width: 560px){
+/*
+	.section-1{
+   width: 100%;
+   height: 100vh;
+   background-color: #002d3d;
+   margin: auto;
+   }
+
+.section-1 img{
+   width: 130%;
+   position: absolute;
+   padding-top: 170px;
+   left: 50%;
+   transform: translateX(-50%);
+
+   }	*/
+   .navbar-brand img{
+	width: 140px;
+	}
+   .section-2 .konten .konten-1{
+	   position: absolute;
+	   width: 40%;
+	   height: 13px;
+	   padding: 8px 10px;
+	}
+	.konten .konten-1 h2{
+	   font-family: "QuickSand";
+	   font-size: 15px;
+	   }
+   .section-2{
+	   height: 60vh;
+   }
+   .section-2 .konten .konten-2{
+	   position: absolute;
+	   margin-top:25px;
+	   width: 87%;
+	   height: 150px;
+	   padding: 17px;
+   }
+   .konten .konten-2 p{
+	   font-family: "QuickSand";
+	   font-size: 11px;
+	   }
+   .section-2 .gambar2{
+   margin-top: 35vh
+   }
+   .section-3 .timeline p{
+   font-size: 30px; 
+   font-family: 'Chillax', sans-serif; 
+   font-weight: bold; 
+   color: white;
+   }
+   .section-3 .gambar2 {
+   width: 15%;
+   rotate: 20deg;
+   left: 40px;
+   margin-top: 40px;
+   }
+   .section-3 .gambar1 {
+   width: 70%;
+   left: 150px;
+   margin-top: 120px;
+   }
+   .section-4{
+	   height: 45vh;
+   }
+   .section-4 .segera h1 {
+   padding: 3px 20px 10px 20px;
+   font-size: 18px;
+   font-family: 'Chillax', sans-serif;
+   font-weight: bold;
+   color: black;
+   }
+   .section-4 .segera p {
+   padding: 0px 20px 0px 20px;
+   font-family: "QuickSand";
+   font-size: 13px;
+   }
+   .section-4 .segera .daftar a {
+   padding: 7px 15px;
+   background: #002d3d;
+   border-radius: 10px;
+   text-decoration: none;
+   font-weight: bold;
+   font-family: "QuickSand";
+   color: white;
+   font-size: 10px;
+   }
+   .section-4 .segera .daftar a :hover{
+	   padding: 7px 15px;
+	   background: white;
+	   border-radius: 10px;
+	   text-decoration: none;
+	   font-weight: bold;
+	   font-family: "QuickSand";
+	   color: #002d3d;
+	   font-size: 10px;
+	   }
+   .section-4 .gambar2 {
+   width: 60%;
+   left: 36%;
+   padding-top: 200px;
+   }
+   restrospeksi {
+   width: 100%;
+   height: 6vh;
+   text-align: center;
+   }
+   .restrospeksi p {
+   font-weight: bold;
+   font-size: 25px;
+   font-family: 'Chillax', sans-serif;
+   }
+   .section-5{
+   display: flex;
+   flex-wrap: wrap;
+   width: 100%;
+   height: 70vh;
+   background-color: #002d3d;
+   }
+   .gambar{
+   width: 50%;
+   }
+   .gambar div img{
+   width: 95%;
+   }
+   .section-3 .gambar0 {
+	   width: 89%;
+	   left: 50%;
+	   transform: translateX(-50%);
+	   margin-top: 140px;
+
+   }
+   .sponsor-logo img{
+	   width: 200px;
+	   right: 26%;
+   }
+   .footer-right .sponsors {
+    padding: 0pt; 
+}
+}

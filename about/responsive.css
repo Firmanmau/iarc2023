@@ -1,0 +1,373 @@
+ @media screen and (max-width: 768px) {
+    h2 {
+    font-family: 'Chillax', sans-serif;
+    font-size: 8vw;
+    color: white;
+    line-height: 70px;
+    }
+   .navbar {
+        padding: 7pt 13pt;
+    }
+    .header-content{
+    line-height: 90px;
+    }
+    .container-2 {
+        grid-template-columns: 100%;
+        height: 180vh;
+    }
+    .box-1 .gambar-iarc-1 {
+        margin-top: 0vh;
+        max-width: 68vw;
+    }
+    .box-1 {
+        float: left;
+        max-height: 0;
+    }    
+    .box-2 {
+        width: min-content;
+        position: absolute;
+        margin-left: 83%;
+        margin-top: 5vh;
+    }
+    .gbrgaris22 {
+        float: right;
+        position: inherit;
+        height: 210vh;
+    }
+
+    .tahun-1 {
+        float: right;
+    }
+    .tahun-2 {
+        margin-top: 100vh;
+    }
+    .gambar-iarc-2 {
+        position: absolute;
+        max-width: 68vw;
+        margin-top: 35vh;
+    }
+    .desc-iarc-2 {
+        margin-top: -150px;
+    }
+    h1 {
+        text-align: right;
+        font-size: 7vw;
+    }
+
+    .box-3 {
+    float: left;
+    max-height: 0;
+   
+    }
+
+    .desc-iarc-2 p{
+    style="font-family: 'Quicksand', sans-serif; 
+    font-weight: bold; 
+    color: white; 
+    font-size: 25px; 
+    }
+    .container-5 .text-goals p{
+        font-size: 15px;
+    }
+    .sliders-1{
+        margin-top: 130px;
+    }
+    .sliders-2{
+        margin-top: 210px;
+    }
+    .container-4{
+    margin-top: 430px;
+    }
+    .legals .logo img{
+        width: 240px;
+    }
+    .logo{
+        text-align: center;
+    }
+    .desc-iarc-1 p{
+        font-size: 25px;
+        margin-top: 5%;
+    }
+    .container-5 .text-goals p{
+        font-size: 20px;
+    }
+    .goals{
+        margin-top: 0;
+    }
+
+    .ft-bg {
+        font-size: 14pt;
+        font-weight: bold;
+    }
+    .ft-sm {
+        font-size: 11pt;
+    }
+    .sponsor-logo img {
+    width: 230px;
+    position: absolute;
+    margin-top: 20px;
+    border-radius: 10px;
+    right: 37%;
+    }
+        .footer-right {
+        align-content: center;
+    }
+    .sponsors{
+    align-self: center;
+    }
+    .footer-left .footer-logo{
+    text-align: center;
+    }
+    .footer-logo img{
+    width: 200px;
+    }
+    .sponsor-logos-container img{
+    width: 200px;
+    position: absolute;
+    margin-top: 12px;
+    border-radius: 4px;
+    }   
+    .footer-right .sponsor-logos-container{
+    justify-content: center;
+    }
+    .footer-right .sponsors {
+    text-align: center;
+    margin-bottom: 10%;
+    padding: 16pt;
+    }
+    .legals img{
+    width: 270px;
+    }
+    .footer-right .legals {
+    justify-content: center;
+    }
+
+
+    .footer {
+        flex-direction: column;
+        font-family: "QuickSand";
+        color: #ffffff;
+        background-color: #001c2b;
+        padding-top: 18pt;
+        height: 50vh;
+    }
+
+    .footer a {
+        text-decoration: none;
+        color: white;
+        height: 16pt;
+        justify-content: flex-start;
+        align-items: center;
+    }
+    .footer a div {
+        margin: 0 2pt !important;
+    }
+
+    .footer-left {
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    .footer-left .footer-logo {
+
+
+    }
+    .footer-left .accounts {
+        padding: 16pt;
+    }
+    .footer-left .accounts div {
+        margin: 4pt 0;
+    }
+
+    .footer-right {
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .footer-right .sponsor-logos-container {
+        justify-content: center;
+    }
+    .footer-right .sponsor-logos-container2 {
+        display: flex;
+        justify-content: space-evenly;
+        margin-top: 70%;
+        }
+    .footer-right .sponsor-logo {
+        width: 64pt; height: 64pt;
+        margin: 4pt;
+        background: transparent;
+        color: var(--color-0);
+    }
+
+    .footer-right .legals {
+        padding: 0pt 12pt 12pt 12pt;
+        background-color:  #001c2b; 
+    }
+    .footer-right .legal-container {
+        width: 256pt; height: 40pt;
+        border-radius: 20pt;
+        background: white;
+    }
+    .sponsor-logos-container2 img {
+        width: 200px;
+        position: absolute;
+        margin-top: 12px;
+        border-radius: 4px;
+    }
+
+
+}
+
+@media screen and (max-width: 560px){
+    header{
+    width: 100%;
+    height: 95vh;
+    background-image: url(gambar/utama.png);
+    background-position: left;
+    background-size: cover;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    }
+    p {
+        font-size: 100%;
+    }
+    .navbar-brand img {
+    width: 110px;
+    }
+    h2 {
+    font-family: 'Chillax', sans-serif;
+    font-size: 8vw;
+    color: white;
+    line-height: 50px;
+    }
+    .header-content{
+    line-height: 90px;
+    }
+    .container-2 {
+        grid-template-columns: 100%;
+        height: 150vh;
+    }
+    .box-1 .gambar-iarc-1 {
+        margin-top: 0vh;
+        max-width: 68vw;
+    }
+    .box-1 {
+        float: left;
+        max-height: 0;
+    }    
+    .box-2 {
+        width: min-content;
+        position: absolute;
+        margin-left: 83%;
+        margin-top: 5vh;
+    }
+    .gbrgaris22 {
+        float: right;
+        position: inherit;
+        height: 160vh;
+    }
+    .tahun-1 {
+        float: right;
+    }
+    .tahun-2 {
+        margin-top: 100vh;
+    }
+    .gambar-iarc-2 {
+        position: absolute;
+        max-width: 68vw;
+        margin-top: 35vh;
+    }
+    .desc-iarc-2 {
+        margin-top: -200px;
+    }
+    h1 {
+        text-align: right;
+        font-size: 7vw;
+    }
+
+    .box-3 {
+    float: left;
+    max-height: 0;
+   
+    }
+
+    .desc-iarc-2 p{
+    style="font-family: 'Quicksand', sans-serif; 
+    font-weight: bold; 
+    color: white; 
+    font-size: 15px; 
+    line-height:;
+    }
+    .container-5 .text-goals p{
+        font-size: 15px;
+    }
+    .sliders-1{
+        margin-top: 1px;
+    }
+    .sliders-2{
+        margin-top: 60px;
+    }
+    .container-4{
+    margin-top: 130px;
+    }
+    .legals .logo img{
+        width: 240px;
+    }
+    .logo{
+        text-align: center;
+    }
+    .desc-iarc-1 p{
+        font-size: 15px;
+        margin-top: 5%;
+    }
+    .container-5 .text-goals p{
+        font-size: 16px;
+    }
+    .goals{
+        margin-top: 0;
+    }
+    .ft-bg {
+        font-size: 12pt;
+        font-weight: bold;
+    }
+    .ft-sm {
+        font-size: 10pt;
+    }
+    .sponsor-logo img {
+    width: 150px;
+    position: absolute;
+    margin-top: 20px;
+    border-radius: 4px;
+    right: 31%;
+    }
+    .footer {
+    flex-direction: column;
+    font-family: "QuickSand";
+    color: #ffffff;
+    background-color: #001c2b;
+    padding-top: 18pt;
+    height: 70vh;
+    }
+    .footer-right .legals {
+    padding: 0pt 12pt 12pt 12pt;
+    }
+    .footer-right {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    text-align: center;
+    }
+    .footer-right .sponsor-logos-container2 {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 60%;
+    }
+    .sponsor-logos-container2 img {
+    width: 100px;
+    position: absolute;
+    margin-top: 17px;
+    border-radius: 4px;
+    }
+ }

@@ -1,0 +1,1008 @@
+:root {
+	--height-nav: 64pt;
+	--height-info: 192pt;
+
+	--color-0: #001c2b;
+	--color-1: white;
+}
+
+* {
+	padding: 0; margin: 0;
+	box-sizing: border-box;
+	font-family: 'Quicksand';
+}
+
+html {
+	min-height: 100%;
+}
+
+body {
+	background: linear-gradient(180deg, #1baba7, #0d4a4b);
+	margin: 0pt;
+	padding: 0px;
+}
+.main-container {
+	height: 100vh;
+	margin-bottom: 25px;
+}
+.baris {
+	display: flex;
+	justify-content: space-between;
+	font-family: "QuickSand";
+}
+
+.navbar {
+	box-sizing: border-box;
+	width: 100%;
+	position: relative;
+	z-index: 20;
+	display: flex;
+	justify-content: space-between;
+	font-family: "QuickSand";
+	background: transparent;
+	padding: 5pt 25pt;
+
+}
+
+.bold {
+	font-weight: bold;
+}
+.ft-xl {
+	font-size: 24pt;
+	font-weight: bold;
+}
+.ft-bg {
+	font-size: 12pt;
+	font-weight: bold;
+}
+.ft-md {
+	font-size: 9pt;
+}
+.ft-sm {
+	font-size: 8pt;
+}
+
+.navbar a {
+	color: #001c2b;
+	text-decoration: none;
+}
+	
+
+.logo .navbar-brand img {
+	width: 140px;
+	
+}
+.navbar .menu {
+	display: none;
+	align-items: center;
+	font-family: "QuickSand";
+}
+.navbar .menu a {
+	padding: 3pt 6pt;
+	transition: color,background-color 0.15s;
+	background-color: transparent;
+	border-radius: 12pt;
+}
+.navbar .menu a:hover {
+	color: #fff;
+	background-color: #001c2b;
+}
+.navbar .menu div {
+	margin: 12pt;
+}
+
+.navbar .merchandise {
+	display: none;
+	align-items: center;
+	font-family: "QuickSand";
+	color: #ffffff;
+}
+.merchandise .merchandise-button {
+	border-radius: 12pt;
+	padding: 3pt 6pt;
+	background-color: #072d3d;
+}
+.navbar .hamburger {
+	padding: 4pt;
+	display: block;
+}
+
+.navbar .collapsible-bar {
+	width: 100%; height: 0;
+	position: absolute;
+	top: 100%; left: 0;
+	overflow: hidden;
+	transition: height 0.3s;
+	backdrop-filter: blur(7px);
+	z-index: 10;
+}
+.navbar .collapsible-bar.active {
+	height: 108pt;
+}
+.collapsible-bar .items {
+	width: 100%; height: 32pt;
+	margin: 2pt 0;
+	padding: 2pt 0;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+	background-color: transparent;
+	transition: background-color 0.15s;
+	color: white;
+	font-weight: bold;
+}
+.collapsible-bar .items:hover {
+	background-color: rgba(255,255,255,0.2);
+}
+.collapsible-bar .items:active {
+	background-color: rgba(255,255,255,0.2);
+}
+
+
+.divisi-main {
+	height: calc(95% - var(--height-nav) - var(--height-info));
+}
+
+.panah-container {
+	width: 15%;
+	justify-content: center;
+	padding: 48pt 0;
+}
+.panah {
+	width: 28pt; height: 64pt;
+	border: solid 2pt #001c2b !important;
+	border-radius: 14pt;
+	overflow: hidden;
+	flex-direction: column;
+	align-items: center;
+	fill: none;
+	stroke: #001c2b;
+	stroke-width: 5;
+	stroke-linecap: round;
+	stroke-linejoin: round;
+}
+.panah-container .panah div {
+	width: 100%;
+	height: 50%;
+	border: solid #001c2b;
+	cursor: pointer;
+}
+.panah .panah-button svg {
+	background-color: transparent;
+	stroke: var(--color-0);
+	transition: background-color,stroke 0.15s;
+}
+.panah .panah-button svg:hover {
+	background-color: var(--color-0);
+	stroke: white;
+}
+
+.divisi-items-container{
+	width: 70%;
+	scroll-behavior: smooth;
+	overflow: hidden;
+}
+.divisi-item {
+	width: 100%; height: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-size: 40pt;
+	/*background: url("Asset Competition/Mikroelektronik.png");*/
+	background-repeat: no-repeat;
+	background-size: 25%;
+	background-position: 80%;
+	font-family: 'Chillax', sans-serif;
+	color: #001c2b;
+}
+.divisi-item h2 {
+
+}
+
+.list {
+	width: 15%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.list-items-container {
+	width: 8pt;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+.list-item {
+	width: 8pt; height: 8pt;
+	margin: 2pt 0;
+	background: var(--color-0);
+	opacity: 0.6;
+	transition: opacity 0.2s;
+}
+.list-item.active {
+	opacity: 1;
+}
+
+
+.divisi-info {
+	height: var(--height-info);
+	padding: 0 12%;
+	justify-content: center;
+	flex-direction: row;
+	margin-top: 30px;
+}
+.divisi-info-items-container {
+	width: 100%;
+	height: 110%;
+	overflow: hidden;
+	scroll-behavior: smooth;
+	position: relative;
+}
+.divisi-info-item {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	opacity: 0;
+	transition: opacity 0.2s;
+}
+.divisi-info-item.active {
+	opacity: 1;
+}
+.divisi-info-header {
+	text-align: start;
+	padding: 0 0 12pt 0;
+}
+.divisi-info-text {
+	text-align: justify;
+}
+
+.divisi-info-buttons-container {
+	align-items: center;
+	justify-content: center;
+	height: 100%;
+	width: 100%;
+	padding: 24pt 0;
+}
+.divisi-info-buttons-container .divisi-info-button {
+	padding: 0 4pt;
+	margin: 0 16pt;
+	font-size: 16pt;
+	border-bottom: solid 2pt var(--color-0);
+	transition: border-color 0.15s;
+}
+.divisi-info-buttons-container .divisi-info-button:hover {
+	border-color: var(--color-1);
+}
+.divisi-info-buttons-container .divisi-info-button a {
+	color: var(--color-0);
+	transition: color 0.15s;
+}
+.divisi-info-buttons-container .divisi-info-button a:hover {
+	color: var(--color-1);
+}
+
+
+.footer {
+	font-family: "QuickSand";
+	color: #ffffff;
+	background-color: #001c2b;
+	padding-top: 18pt;
+	height: 35vh;
+}
+
+.footer a {
+	text-decoration: none;
+	color: white;
+	height: 16pt;
+	justify-content: flex-start;
+	align-items: center;
+}
+.footer a div {
+	margin: 0 2pt !important;
+}
+
+.footer-left {
+	width: 100%;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+
+.footer-left .accounts {
+	padding: 16pt;
+}
+.footer-left .accounts div {
+	margin: 4pt 0;
+}
+
+.footer-right {
+	width: 100%;
+	flex-direction: column;
+}
+.footer-right .sponsors {
+	padding: 0pt 12pt 0pt 12pt;
+}
+.footer-right .sponsor-logos-container {
+	justify-content: flex-start;
+}
+.footer-right .sponsor-logos-container2 {
+	display: flex;
+	justify-content: space-evenly;
+}
+.footer-right .sponsor-logo {
+	width: 64pt; height: 64pt;
+	margin: 4pt;
+	background: transparent;
+	color: var(--color-0);
+}
+.sponsor-logos-container img{
+	width: 200px;
+    position: absolute;
+    margin-top: 20px;
+    border-radius: 4px;
+	
+}
+.sponsor-logos-container2 img{
+	position: absolute;
+	margin-top: 1%;
+	border-radius: 4px;
+	width: 140px;
+	position: absolute;
+	}
+.footer-right .legals {
+	
+	padding: 12pt;
+
+}
+.footer-right .legal-container {
+	width: 256pt; height: 40pt;
+	border-radius: 20pt;
+	background: white;
+}
+	.footer-logo img{
+	width: 200px;
+	}
+	.legals img{
+		width: 340px;
+	}
+
+
+@media screen and (min-width: 768px){
+
+	.footer {
+		flex-direction: row;
+	}
+	.footer-left {
+		width: 50%;
+		flex-direction: row;
+	}
+	.footer-right {
+		width: 50%;
+		align-content: center;
+	}
+	:root {
+		--height-nav: 80pt;
+		--height-info: 128pt;
+	}
+
+	.ft-xl {
+		font-size: 60pt;
+	}
+	.ft-bg {
+		font-size: 14pt;
+		font-weight: bold;
+	}
+	.ft-md {
+		font-size: 12pt;
+	}
+	.ft-sm {
+		font-size: 10pt;
+	}
+	.navbar .menu {
+		display: flex;
+	}
+	.navbar .merchandise {
+		display: flex;
+	}
+	.navbar .hamburger {
+		display: none;
+	}
+	.navbar-brand img{
+	width: 140px;
+	}
+	.brs {
+	display: flex;
+	justify-content: space-between;
+	font-family: "QuickSand";
+	}
+	
+}
+
+@media screen and (max-width: 768px){
+	.main-container{
+	height: 100vh;
+    margin-bottom: 60px;
+}
+	.brs {
+	display: flex;
+	justify-content: end;
+	font-family: "QuickSand";
+	}
+	.navbar-brand img {
+    width: 140px;
+	}
+	.divisi-info {
+	height: 30%;
+	padding: 0 8%;
+	justify-content: center;
+	flex-direction: column;
+	margin-top: 0;
+	}
+	:root {
+		--height-nav: 80pt;
+		--height-info: 128pt;
+	}
+	.footer-right {
+		width: 100%;
+		align-content: center;
+	}
+	.ft-xl {
+		font-size: 60pt;
+	}
+	.ft-bg {
+		font-size: 12pt;
+		font-weight: bold;
+	}
+	.ft-md {
+		font-size: 12pt;
+	}
+	.ft-sm {
+		font-size: 9pt;
+	}
+
+	.navbar {
+		padding: 16pt 32pt;
+	}
+	.navbar .menu {
+		display: flex;
+	}
+	.navbar .merchandise {
+		display: flex;
+	}
+	.navbar .hamburger {
+		display: none;
+	}
+
+	.divisi-item {
+		background-size: 25%;
+		background-position: 80%;
+	}
+
+	.divisi-info {
+		flex-direction: row;
+	}
+
+	.divisi-info-items-container {
+		width: 50%; 
+		height: 80%;
+	}
+	.divisi-info-header {
+		text-align: left;
+		padding: 0;
+	}
+	.divisi-info-text {
+		text-align: justify;
+	}
+	.divisi-info-buttons-container {
+		width: 50%; height: 100%;
+		padding: 0;
+		justify-content: center;
+	}
+
+
+	.list-items-container {
+		width: 16pt;
+	}
+	.list-item {
+		width: 16pt; height: 16pt;
+		margin: 8pt 0;
+	}
+
+
+	.footer {
+		flex-direction: column;
+		margin-top: 5%;
+		align-items: center	;
+		height: 50vh;
+	}
+	.footer-left {
+		width: 50%;
+		flex-direction: column;
+	}
+	.footer-right {
+		align-items: center	;
+		flex-direction: column;
+		width: 50%;
+	}
+	.footer-right .sponsor-logos-container2 {
+	display: flex;
+	justify-content: space-evenly;
+	margin-top: 90%;
+	margin-bottom: 30%;
+	}
+	.footer-logo img{
+	width: 200px;
+	}
+	.sponsor-logos-container img{
+	width: 200px;
+	position: absolute;
+	margin-top: 3%;
+	border-radius: 4px;
+	left: 38%;
+	}
+	.sponsor-logos-container2 img {
+	width: 200px;
+	position: absolute;
+	margin-top: 12px;
+	border-radius: 4px;
+	}
+	.legals img{
+	width: 240px;
+	}
+	.footer-right .legals {
+    padding: 12pt;
+    margin-top: 70px;
+    justify-content: center;
+	}
+}
+
+@media screen and (max-width: 560px ){
+	.logo .navbar-brand img {
+    width: 110px;
+	}
+	.main-container {
+    height: 100vh;
+    margin-bottom: 180px;
+	}
+	.navbar .hamburger {
+    display: block;
+    margin-right: 32px;
+	}
+	.navbar .menu {
+    display: none;
+	}
+	.navbar .merchandise {
+    display: none;
+	}
+	.navbar {
+    padding: 7pt 13pt;
+	}
+	.divisi-item {
+    background-size: 40%;
+    background-position: 80%;
+	}
+	.divisi-info-items-container {
+	width: 100%;
+	height: 90%;
+	overflow: hidden;
+	scroll-behavior: smooth;
+	position: relative;
+	}
+	.divisi-info {
+    flex-direction: column;
+	height: 70%;
+    padding: 0 8%;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 0;
+	}
+	.divisi-main {
+    height: calc(95% - var(--height-nav) - var(--height-info));
+    margin: 0 15px;
+    }
+	.ft-xl {
+    font-size: 40pt;
+	}	
+	.divisi-info-buttons-container {
+    align-items: start;
+    height: 50%;
+    width: 100%;
+    justify-content: center;
+    
+	}	
+	.daftar{
+	width: 50%; height: 100%;
+	padding: 2pt 0;
+	justify-content: center;
+	}
+	.footer-left .footer-logo{
+	text-align: center;
+	}
+	.footer-logo img{
+	width: 200px;
+	}
+	.sponsor-logos-container img{
+	width: 150px;
+	position: absolute;
+	margin-top: 12px;
+	border-radius: 4px;
+	left: 30%;
+	}	
+	.baris {
+    display: flex;
+    justify-content: space-between;
+	}
+	.foot{
+	justify-content: end;
+	display: flex;
+	}
+	.footer {
+    flex-direction: column;
+    margin-top: 5%;
+    align-items: center;
+    height: 65vh;
+    justify-content: end;
+	}
+	.footer-right .sponsor-logos-container{
+	justify-content: center;
+	}
+	.footer-right .sponsors {
+	padding: 16pt;
+	margin-bottom: 10%;
+	text-align: center;
+	}
+	.legals img{
+	width: 270px;
+	}
+	.footer-right .legals {
+    justify-content: center;
+    padding: 12pt;
+    margin-top: 20px;
+    justify-content: center;
+	}
+	.footer-right .sponsor-logos-container2 {
+	display: flex;
+	justify-content: space-evenly;
+	margin-top: 60%;
+	}
+	.sponsor-logos-container2 img {
+	width: 100px;
+	position: absolute;
+	margin-top: 17px;
+	border-radius: 4px;
+	}
+}
+
+
+
+
+
+
+
+	/*:root {
+	--height-nav: 64pt;
+	--height-info: 192pt;
+
+	--color-0: #001c2b;
+	--color-1: white;
+}
+
+* {
+	padding: 0; margin: 0;
+	box-sizing: border-box;
+	font-family: 'Quicksand';
+}
+
+html {
+	min-height: 100%;
+}
+
+body {
+	background: linear-gradient(180deg, #1baba7, #0d4a4b);
+	margin: 0pt;
+	padding: 0px;
+}
+.main-container {
+	height: 100vh;
+}
+.baris {
+	display: flex;
+	justify-content: space-between;
+	font-family: "QuickSand";
+}
+
+.navbar {
+	height: var(--height-nav);
+	padding: 8pt;
+	position: relative;
+}
+
+.bold {
+	font-weight: bold;
+}
+.ft-xl {
+	font-size: 24pt;
+	font-weight: bold;
+}
+.ft-bg {
+	font-size: 12pt;
+	font-weight: bold;
+}
+.ft-md {
+	font-size: 9pt;
+}
+.ft-sm {
+	font-size: 8pt;
+}
+
+.navbar a {
+	color: #001c2b;
+	text-decoration: none;
+}
+	
+}
+.navbar-brand img {
+	width: 140px;
+	
+}
+.navbar .menu {
+	display: none;
+	align-items: center;
+	font-family: "QuickSand";
+}
+.navbar .menu a {
+	padding: 3pt 6pt;
+	transition: color,background-color 0.15s;
+	background-color: transparent;
+	border-radius: 12pt;
+}
+.navbar .menu a:hover {
+	color: #fff;
+	background-color: #001c2b;
+}
+.navbar .menu div {
+	margin: 12pt;
+}
+
+.navbar .merchandise {
+	display: none;
+	align-items: center;
+	font-family: "QuickSand";
+	color: #ffffff;
+}
+.merchandise .merchandise-button {
+	border-radius: 12pt;
+	padding: 3pt 6pt;
+	background-color: #072d3d;
+}
+.navbar .hamburger {
+	padding: 4pt;
+	display: block;
+}
+
+.navbar .collapsible-bar {
+	width: 100%; height: 0;
+	position: absolute;
+	top: 100%; left: 0;
+	overflow: hidden;
+	transition: height 0.3s;
+	backdrop-filter: blur(7px);
+	z-index: 10;
+}
+.navbar .collapsible-bar.active {
+	height: 108pt;
+}
+.collapsible-bar .items {
+	width: 100%; height: 32pt;
+	margin: 2pt 0;
+	padding: 2pt 0;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+	background-color: transparent;
+	transition: background-color 0.15s;
+	color: white;
+	font-weight: bold;
+}
+.collapsible-bar .items:hover {
+	background-color: rgba(255,255,255,0.2);
+}
+.collapsible-bar .items:active {
+	background-color: rgba(255,255,255,0.2);
+}
+
+
+.divisi-main {
+	height: calc(100% - var(--height-nav) - var(--height-info));
+}
+
+.panah-container {
+	width: 15%;
+	justify-content: center;
+	padding: 48pt 0;
+}
+.panah {
+	width: 28pt; height: 64pt;
+	border: solid 2pt #001c2b !important;
+	border-radius: 14pt;
+	overflow: hidden;
+	flex-direction: column;
+	align-items: center;
+	fill: none;
+	stroke: #001c2b;
+	stroke-width: 5;
+	stroke-linecap: round;
+	stroke-linejoin: round;
+}
+.panah-container .panah div {
+	width: 100%;
+	height: 50%;
+	border: solid #001c2b;
+	cursor: pointer;
+}
+.panah .panah-button svg {
+	background-color: transparent;
+	stroke: var(--color-0);
+	transition: background-color,stroke 0.15s;
+}
+.panah .panah-button svg:hover {
+	background-color: var(--color-0);
+	stroke: white;
+}
+
+.divisi-items-container{
+	width: 70%;
+	scroll-behavior: smooth;
+	overflow: hidden;
+}
+.divisi-item {
+	width: 100%; height: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-size: 40pt;*/
+	/*background: url("Asset Competition/Mikroelektronik.png");*/
+/*	background-repeat: no-repeat;
+	background-size: 60%;
+	background-position: 60% center;
+	font-family: "Quicksand";
+	color: #001c2b;
+}
+.divisi-item h2 {
+
+}
+
+.list {
+	width: 15%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.list-items-container {
+	width: 8pt;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+.list-item {
+	width: 8pt; height: 8pt;
+	margin: 2pt 0;
+	background: var(--color-0);
+	opacity: 0.6;
+	transition: opacity 0.2s;
+}
+.list-item.active {
+	opacity: 1;
+}
+
+
+.divisi-info {
+	height: var(--height-info);
+	padding: 0 12%;
+	justify-content: center;
+	flex-direction: column;
+}
+.divisi-info-item {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	opacity: 0;
+	transition: opacity 0.2s;
+}
+.divisi-info-item.active {
+	opacity: 1;
+}
+.divisi-info-header {
+	text-align: center;
+	padding: 0 0 12pt 0;
+}
+.divisi-info-text {
+	text-align: justify;
+}
+
+.divisi-info-buttons-container {
+	align-items: center;
+	justify-content: center;
+	height: 50%;
+	width: 100%;
+	padding: 24pt 0;
+}
+.divisi-info-buttons-container .divisi-info-button {
+	padding: 0 4pt;
+	margin: 0 16pt;
+	font-size: 16pt;
+	border-bottom: solid 2pt var(--color-0);
+	transition: border-color 0.15s;
+}
+.divisi-info-buttons-container .divisi-info-button:hover {
+	border-color: var(--color-1);
+}
+.divisi-info-buttons-container .divisi-info-button a {
+	color: var(--color-0);
+	transition: color 0.15s;
+}
+.divisi-info-buttons-container .divisi-info-button a:hover {
+	color: var(--color-1);
+}
+
+
+.footer {
+	flex-direction: column;
+	font-family: "QuickSand";
+	color: #ffffff;
+	background-color: #001c2b;
+	padding-top: 18pt;
+}
+
+.footer a {
+	text-decoration: none;
+	color: white;
+	height: 16pt;
+	justify-content: flex-start;
+	align-items: center;
+}
+.footer a div {
+	margin: 0 2pt !important;
+}
+
+.footer-left {
+	width: 100%;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+.footer-left .footer-logo {
+
+
+}
+.footer-left .accounts {
+	padding: 16pt;
+}
+.footer-left .accounts div {
+	margin: 4pt 0;
+}
+
+.footer-right {
+	width: 100%;
+	flex-direction: column;
+
+.footer-right .sponsor-logo {
+	width: 64pt; height: 64pt;
+	margin: 4pt;
+	background: transparent;
+	color: var(--color-0);
+}
+
+
+.footer-right .legal-container {
+	width: 256pt; height: 40pt;
+	border-radius: 20pt;
+	background: white;
+}*/

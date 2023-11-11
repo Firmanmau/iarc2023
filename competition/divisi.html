@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html>
+
+
+	<head>
+		<link rel="stylesheet" type="text/css" href="divisi.css">
+		<link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@100;400;600&display=swap" rel="stylesheet">
+
+		<meta name="viewport" content="width=device-width,initial-scale=1">
+		
+		<script src="
+		https://cdn.jsdelivr.net/npm/sweetalert2@11.7.1/dist/sweetalert2.all.min.js
+		"></script>
+		<link href="
+		https://cdn.jsdelivr.net/npm/sweetalert2@11.7.1/dist/sweetalert2.min.css
+		" rel="stylesheet">
+		<link
+		rel="stylesheet"
+		href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+	  />
+		<title>Competition</title>
+	</head>
+	<body>
+		<div class="main-container">
+			<div class="navbar baris">
+				<div class="logo">
+			    	<a class="navbar-brand" href="divisi.html">
+			    		<img  src="logo/iarc-hitam.png" title ="Logo IARC 23" >
+			    	</a>
+				</div>
+				<div class="menu baris ft-md">
+					<div><a href="../home.html">Home</a></div>
+					<div><a href="../about/index.php">About</a></div>
+					<div><a href="divisi.html">Competition</a></div>
+				</div>
+				<div class="merchandise baris">
+					<div class="merchandise-button"><a href="https://instagram.com/iarc.store?igshid=YmMyMTA2M2Y=" style="color: #ffffff; text-decoration: none;">Merchandise</a></div>
+				</div>
+				<div class="hamburger" onclick="doc=document.getElementsByClassName('navbar')[0].getElementsByClassName('collapsible-bar')[0]; if(doc.classList.contains('active')){doc.classList.remove('active')} else {doc.classList.add('active')}">
+					<svg style="height: 70%; stroke: var(--color-0); stroke-width: 15;" viewbox="0 0 100 100">
+						<path d="M10 25 h80 M10 50 h80 M10 75 h80" />
+					</svg>
+				</div>
+				<div class="collapsible-bar ft-md">
+					<a href="../home.html"><div class="items">Home</div></a>
+					<a href="../about/index.php"><div class="items">About</div></a>
+					<a href="divisi.html"><div class="items">Competition</div></a>
+				</div>
+			</div>
+			<div class="divisi-main baris">
+				<div class="panah-container baris">
+					<div class="panah baris">
+						<div class="panah-button" id="panah-atas" style="border-width: 0 0 1pt 0;" onclick="scrolls(-1)">
+							<svg style="width: 100%; height: 100%;" viewbox="0 0 64 64">
+								<path d="M 16 48 l 16 -24 l 16 24" />
+							</svg>
+						</div>
+						<div class="panah-button" id="panah-bawah" style="border-width: 1pt 0 0 0;" onclick="scrolls(1)">
+							<svg style="width: 100%; height: 100%;" viewbox="0 0 64 64">
+								<path d="M 16 20 l 16 24 l 16 -24" />
+							</svg>
+						</div>
+					</div>
+				</div>
+				<div class="divisi-items-container" id="divisi-scroll">
+					<div class="divisi-item" style="background-image: url('Asset Competition/divisi-4.png');">
+						<div class="ft-xl">PLC</div>
+					</div>
+					<div class="divisi-item" style="background-image: url('Asset Competition/divisi-6.png');">
+						<div class="ft-xl">SCADA</div>
+					</div>
+					<div class="divisi-item" style="background-image: url('Asset Competition/divisi-9.png');">
+						<div class="ft-xl">LEGO</div>
+					</div>
+					<div class="divisi-item" style="background-image: url('Asset Competition/divisi-8.png');">
+						<div class="ft-xl">LTA</div>
+					</div>
+					<div class="divisi-item" style="background-image: url('Asset Competition/divisi-7.png');">
+						<div class="ft-xl">LTM</div>
+					</div>
+					<div class="divisi-item" style="background-image: url('Asset Competition/divisi-10.png');">
+						<div class="ft-xl">Soccer-Bot</div>
+					</div>
+					<div class="divisi-item" style="background-image: url('Asset Competition/divisi-11.png');">
+						<div class="ft-xl">IoT</div>
+					</div>
+					<div class="divisi-item" style="background-image: url('Asset Competition/divisi-2.png');">
+						<div class="ft-xl">RE</div>
+					</div>
+				</div>
+				<div class="list">
+					<div class="list-items-container" id="list-switch">
+						<div class="list-item active"></div>
+						<div class="list-item"></div>
+						<div class="list-item"></div>
+						<div class="list-item"></div>
+						<div class="list-item"></div>
+						<div class="list-item"></div>
+						<div class="list-item"></div>
+						<div class="list-item"></div>
+					</div>
+				</div>
+			</div>
+			<div class="divisi-info baris">
+				<div class="divisi-info-items-container" id="info-switch">
+					<div class="divisi-info-item active">
+						<div class="divisi-info-header ft-bg">PLC</div>
+						<div class="divisi-info-text ft-md">
+							<ul>
+								<li>Kompetisi PLC Tingkat SMA/SMK dalam ajang Industrial Automation and Robotic Competition merupakan  lomba dalam menyelesaikan tantangan-tantangan yang berkaitan dengan pengoperasian dan pemrograman PLC.</li>
+								<li>Kategori lomba dapat diikuti oleh siswa/soswi pelajar SMA/SMK/MA sederajat dan PTN/PTS se-Indonesia.</li>
+							</ul>
+						</div>
+					</div>
+
+					<div class="divisi-info-item">
+						<div class="divisi-info-header ft-bg">SCADA</div>
+						<div class="divisi-info-text ft-md">
+							<ul>
+								<li>Dalam kompetisi ini para peserta akan Menyusun sistem menggunakan software SCADA. Kompetisi scada ditujukan untuk  tingkat perguruan tinggi dengan study case pada level industri. Masing-masing tim diwajibkan terdiri dari dua sampai tiga orang. Kategori lomba dapat diikuti oleh siswa/soswi pelajar SMA/SMK/MA sederajat dan PTN/PTS se-Indonesia. </li>
+							</ul>
+						</div>
+					</div>
+
+					<div class="divisi-info-item">
+						<div class="divisi-info-header ft-bg">LEGO EV3</div>
+						<div class="divisi-info-text ft-md">
+							<ul>
+								<li>Lego EV3 adalah sebuah wadah perangkat lunak-perangkat keras yang diproduksi oleh Lego untuk pengembangan robot-robot pemprograman yang berbasis pada blok-blok pembangunan Lego. Setiap versi dari sistem tersebut meliputi sebuah komputer bata buatan yang mengkontrol sistem, sebuah set sensor dan motor modular, dan bagian-bagian Lego dari produk Technic untuk menciptakan sistem mekanikal.</li>
+							</ul>
+						</div>
+					</div>
+
+					<div class="divisi-info-item">
+						<div class="divisi-info-header ft-bg">LTA</div>
+						<div class="divisi-info-text ft-md">
+							<ul>
+								<li>Line tracer analog adalah cabang lomba robot yang mana robot bergerak mengikuti suatu garis atau penyusuran garis sebagai panduan jalannya robot.Kategori perlombaan ini hanya terdiri dari satu segmentasi saja yaitu tingkat SMA/SMK/MA dengan masing-masing tim terdiri dari dua sampai tiga orang. </li>
+							</ul>
+						</div>
+					</div>
+
+					<div class="divisi-info-item">
+						<div class="divisi-info-header ft-bg">LTM</div>
+						<div class="divisi-info-text ft-md">
+							<ul>
+								<li>Lomba line tracer microcontroller merupakan cabang lomba robot yang dapat bergerak mengikuti suatu garis secara otomatis dengan sebuah mikrokontroler atau menggunakan suatu bahasa pemrograman. Kategori perlombaan ini dibagi menjadi dua segmentasi yaitu tingkat SMA/SMK/MA dan perguruan tinggi.</li>
+							</ul>
+						</div>
+					</div>
+
+					<div class="divisi-info-item">
+						<div class="divisi-info-header ft-bg">Soccer-Bot</div>
+						<div class="divisi-info-text ft-md">
+							<ul>
+								<li>Kompetisi Soccer Robot merupakan cabang lomba robot untuk memainkan pertandingan sepak bola. Robot didesain sedemikian rupa untuk bertahan dan memasukkan bola sebanyak-banyaknya ke gawang lawan. Kategori perlombaan ini dibagi menjadi dua segmentasi yaitu tingkat SMA/SMK/MA dan perguruan tinggi. </li>
+								<li>Autonomous</li>
+							</ul>
+						</div>
+					</div>
+
+					<div class="divisi-info-item">
+						<div class="divisi-info-header ft-bg">Internet of Things</div>
+						<div class="divisi-info-text ft-md">
+							<ul>
+								<li>Bentuk perlombaan Internet Of Things kategori Karya Tulis Ilmiah ini yaitu berupa  karya tulis dan karya berupa software yang dapat diimplementasikan dimanapun dan kapanpun. Segmentsi perlombaan ini hanya ada satu yaitu tingkat SMA/SMK/MA. Masing-masing tim terdiri dari dua sampai tiga orang.</li>
+							</ul>
+						</div>
+					</div>
+
+					<div class="divisi-info-item">
+						<div class="divisi-info-header ft-bg">Renewable Energy</div>
+						<div class="divisi-info-text ft-md">
+							<ul>
+								<li>Sebuah kegiatan kompetisi dalam ranah penyusunan karya tulis ilmiah yang disusun berupa hasil penelitian maupun gagasan tertulis. Dengan mengutamakan tema yang terkait perombaan ini. Segmentsi perlombaan ini hanya ada satu yaitu tingkat SMA/SMK/MA. Masing-masing tim terdiri dari dua sampai tiga orang. </li>
+							</ul>
+						</div>
+					</div>
+
+					<!--div hidden><h2>A Pendaftar</h2></div>
+					<div hidden>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</div-->
+				</div>
+				<div class="divisi-info-buttons-container baris">
+					<input name="divisi" type="hidden" value="1" id="divisi-input"></input>
+					<div class="divisi-info-button">
+						<div class="ft-bg"><a href="https://drive.google.com/drive/folders/1k74aVLB-U84BfQ7pF21TO3yj1AjzPkRS?usp=sharing" style="text-decoration: none;" id="panduan">Panduan</a></div>
+					</div>
+					<div class="divisi-info-button">
+						<input name="divisi" type="hidden" value="1" id="divisi-input"></input>
+						<div class="ft-bg"><a href="https://its.id/m/REGISTRATIONFORM-IARC2023" style="text-decoration: none;">Daftar</a></div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="footer baris">
+			<div class="footer-left baris">
+				<div class="footer-logo"><img src="logo/iarc-warna.png" alt="Logo IARC 2023" ></div>
+				<div class="accounts">
+					<div class="ft-bg">Official Acount</div>
+					<div class="ft-sm">
+			          	<a class="baris" href="https://instagram.com/iarc.its?igshid=YzdkMWQ2MWU=" target="_blank">
+			          		<img src="SVG/AssetIG.svg" style="height: 100%;">
+			          		<div>@IARC_Official</div>
+			          	</a>
+		        	</div>
+		         	<div class="ft-sm">
+			          	<a class="baris" href="https://www.tiktok.com/@iarc.its?_t=8YAfFvH7Slu&_r=1" target="_blank">
+			          		<img src="SVG/AssetTT.svg" style="height: 100%;">
+			          		<div>@IARC_Official</div>
+			          	</a>
+			        </div>
+			    </div>
+          	</div>
+			<div class="footer-right brs">
+				<div class="sponsors">
+					<h3 class="ft-bg">Sponsors</h3>
+					<div class="sponsor-logos-container baris">
+						<img src="../img/png/robokidz.jpeg">
+					</div>
+					<div class="sponsor-logos-container2">
+						<img src="../img/png/laderm.png">
+					</div>
+				</div>
+				<div class="legals baris">
+					<img  src="../img/png/asset25.png" >
+				</div>
+			</div>
+		</div>	
+	</body>
+	<script type="text/javascript">
+		const docs = [document.getElementById("divisi-scroll"),document.getElementById("info-switch"),document.getElementById("list-switch")]
+		var active = 0;
+		function scrolls(direction){
+			if (active + direction >= 0 && active + direction < 8){
+				active += direction
+				docs.forEach(function(e){
+					cmd = e.id.split("-")
+					if (cmd[1] == "scroll"){
+						e.scroll(0,e.offsetHeight*active)
+					} else if (cmd[1] == "switch"){
+						e.children[active-direction].classList.remove("active")
+						e.children[active].classList.add("active")
+					}
+				})
+				document.getElementById("divisi-input").value = active+1
+
+			}
+			if (active==0){
+				document.getElementById("panduan").href = "";
+			}
+			else if (active==1){
+				document.getElementById("panduan").href = "https://drive.google.com/drive/folders/17nylOzmYnr2_5aRNicmg0TEIIo460sK7?usp=share_link";
+			}else if (active==2){
+				document.getElementById("panduan").href = "https://drive.google.com/drive/folders/1AfZdKUFe79az7UJfINnqdo3B0TmEZvgl?usp=share_link";
+			}else if (active==3){
+				document.getElementById("panduan").href = "https://drive.google.com/drive/folders/1gWpZoBLhMHJxYnAt9vvwOGqdsKKQOsjD?usp=share_link";
+			}else if (active==4){
+				document.getElementById("panduan").href = "https://drive.google.com/drive/folders/10aYSXMLBlwegm20gJMaTbmn-W_yTDbTP?usp=share_link";
+			}else if (active==5){
+				document.getElementById("panduan").href = "https://drive.google.com/drive/folders/1NBhsTy7DDGiTj3s1XZlquH_BhBP44O2K?usp=share_link";
+			}else if (active==6){
+				document.getElementById("panduan").href = "https://drive.google.com/drive/folders/1FQZFmhDH-rNl6ZIIhg1Xwi_3FHY-uMiV?usp=share_link";
+			}else if (active==7){
+				document.getElementById("panduan").href = "https://drive.google.com/drive/folders/1FQZFmhDH-rNl6ZIIhg1Xwi_3FHY-uMiV?usp=share_link";
+			}
+		}
+	</script>
+
+<script>
+Swal.fire({
+  title: 'Pengumuman',
+  text: "Mohon maaf kepada seluruh calon peserta. Setelah mempertimbangkan beberapa hal, kami dari panitia memutuskan untuk menghapus Perlombaan Scada, Soccer PT, LTM PT,  dan KTI PT dari IARC 2023 tahun ini. Mohon maaf atas ketidaknyamanannya, info lebih lanjut dapat meghubungi CP yang tertera.",
+  showConfirmButton: false,
+  showCloseButton: true,
+  showClass: {
+    popup: 'animate__animated animate__fadeInDown'
+  },
+  hideClass: {
+    popup: 'animate__animated animate__fadeOutUp'
+  }
+})
+</script>
+
+
+</html>
